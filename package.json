@@ -1,5 +1,5 @@
 {
-  "name": "testProject2",
+  "name": "yes",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -32,8 +32,13 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/neo/testProject2.git"
+    "url": "git@github.com:tejeshm/cybadigitals.git"
   },
   "author": "neo",
-  "license": ""
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejeshm/cybadigitals/issues"
+  },
+  "homepage": "https://github.com/tejeshm/cybadigitals",
+  "devDependencies": {}
 }

@@ -53,5 +53,7 @@
     "url": "https://github.com/tejeshm/cybadigitals/issues"
   },
   "homepage": "https://github.com/tejeshm/cybadigitals",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp-image-optimization": "^0.1.3"
+  }
 }

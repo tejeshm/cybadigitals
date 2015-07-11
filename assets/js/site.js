@@ -133,4 +133,5 @@
 
 
   }); // end of document ready
+  $('.side-nav a[href^="/' + location.pathname.split("/")[1] + '"]').parent().addClass('active');
 })(jQuery); // end of jQuery name space

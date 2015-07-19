@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/styles/importer.css">
   <link rel="stylesheet" href="/styles/site.css">
   <link rel="stylesheet" href="/styles/ghpages-materialize.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link rel="stylesheet" href="/styles/materialize.min.css">-->
   <!--STYLES END-->
 </head>
@@ -15,26 +16,97 @@
 <header>
   <nav class="top-nav">
     <div class="container">
-      <div class="nav-wrapper"><a class="page-title">CybaDigitals</a></div>
+      <div class="nav-wrapper"><a href="/" class="page-title">CybaDigitals</a></div>
     </div>
   </nav>
   <div class="container">
     <a href="#" data-activates="nav-mobile"
-                            class="button-collapse top-nav full hide-on-large-only">
+       class="button-collapse top-nav full hide-on-large-only">
       <i class="mdi-navigation-menu"></i>
     </a>
   </div>
   <ul style="left: 0px;" id="nav-mobile" class="side-nav fixed">
-    <li class="logo"><h4>Categories</h4></li>
-    <li class="bold"><a href="/architectural-designs" class="waves-effect waves-teal">Architectural</a></li>
-    <li class="bold"><a href="/educational-designs" class="waves-effect waves-teal">Educational</a></li>
-    <li class="bold"><a href="/accessories" class="waves-effect waves-teal">Accessories</a>
+    <li class="logo"><h4>Menu</h4></li>
+    <li class="bold"><a href="/gallery" class="waves-effect waves-teal">Gallery</a></li>
+    <li class="bold"><a href="/store" class="waves-effect waves-teal">Store<span class="badge">coming soon</span></a>
+    </li>
+    <li class="bold"><a href="/about-3d-printing" class="waves-effect waves-teal">About 3D Printing</a></li>
+    <li class="bold"><a href="/contact-us" class="waves-effect waves-teal">Contact Us</a>
     </li>
   </ul>
 </header>
 <main>
   <%- body %>
 </main>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Thank you for visiting CybaDigitals</h5>
+        <button data-target="contact-us-modal" class="btn modal-trigger">Contact Us</button>
+      </div>
+      <div class="footer-details">
+        <div>
+          <div class="input-field col s6 white-text">
+            <i class="material-icons prefix">phone</i>
+            <input disabled id="phone" type="tel" value="9000259316 9640919291" class="validate">
+            <label for="phone">Telephone</label>
+          </div>
+          <div class="input-field col s6 white-text">
+            <i class="material-icons prefix">email</i>
+            <input disabled id="email" type="tel" value="cybadigital.com" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="col l6 s12">
+          <ul>
+            <div class="fb-like" data-href="http://cybadigitals.com/" data-layout="standard" data-action="like"
+                 data-show-faces="true" data-share="true"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="contact-us-modal" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Contact us</h4>
+
+        <div class="row">
+          <form class="col s12" id="contact-us-form">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">How can we help you?</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" onclick="submitContachUs()" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+
+  </div>
+</footer>
 <!--SCRIPTS-->
 <script src="/js/dependencies/sails.io.js"></script>
 <script src="/js/jquery.min.js"></script>

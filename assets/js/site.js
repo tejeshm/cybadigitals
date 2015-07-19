@@ -135,3 +135,8 @@
   }); // end of document ready
   $('.side-nav a[href^="/' + location.pathname.split("/")[1] + '"]').parent().addClass('active');
 })(jQuery); // end of jQuery name space
+
+function submitContachUs() {
+
+  Materialize.toast('Thank you, we will get back to you soon!', 4000)
+}

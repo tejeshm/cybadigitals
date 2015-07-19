@@ -266,3 +266,50 @@ div.default-page {
 .pocket {
   display: none;
 }
+
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  display: table;
+  content: " ";
+}
+.dl-horizontal dd:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;
+    overflow: hidden;
+    clear: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dl-horizontal dd {
+    margin-left: 100px;
+  }
+}
+ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
+  color: white;
+  background-color: #465D86;
+}
+
+footer .footer-details input {
+  color: white !important;
+}
+footer .footer-details label {
+  color: white !important;
+}
+

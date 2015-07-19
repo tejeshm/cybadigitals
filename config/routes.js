@@ -32,13 +32,14 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
-  '/'                     : {view: 'homepage'},
-  '/architectural-designs': {view: 'architecture'},
-  '/educational-designs'   : {view: 'education'},
-  '/accessories'          : {view: 'accessories'},
-  'get /login'            : 'AuthController.login',
-  'get /logout'           : 'AuthController.logout',
-  'get /register'         : 'AuthController.register',
+  '/'                 : {view: 'homepage'},
+  '/gallery'          : {view: 'gallery'},
+  '/store'            : {view: 'store'},
+  '/about-3d-printing': {view: 'about-3d-printing'},
+  '/contact-us'       : {view: 'contact-us'},
+  'get /login'        : 'AuthController.login',
+  'get /logout'       : 'AuthController.logout',
+  'get /register'     : 'AuthController.register',
 
   'post /auth/local'        : 'AuthController.callback',
   'post /auth/local/:action': 'AuthController.callback',

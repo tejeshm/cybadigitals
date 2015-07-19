@@ -137,6 +137,5 @@
 })(jQuery); // end of jQuery name space
 
 function submitContachUs() {
-
   Materialize.toast('Thank you, we will get back to you soon!', 4000)
 }

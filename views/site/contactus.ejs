@@ -6,7 +6,7 @@
         <div class="card  darken-1">
           <div class="card-content">
             <div class="row">
-              <form class="col s12" id="contact-us-form">
+              <form method="POST" class="col s12" id="contact-us-form">
                 <div class="row">
                   <h5 class="center-align">You can contact us at</h5>
 
@@ -21,25 +21,26 @@
                     <label for="email">Email</label>
                   </div>
                   <h5 class="center-align">Or Write to us at</h5>
+
                   <div class="input-field col s6">
-                    <input id="first_name" type="text" class="validate">
+                    <input id="first_name" name="firstName" type="text" class="validate">
                     <label for="first_name">First Name</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
+                    <input id="last_name" name="lastName" type="text" class="validate">
                     <label for="last_name">Last Name</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
+                    <input id="email" name="email" type="email" class="validate">
                     <label for="email">Email</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">How can we help you?</label>
+                    <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                    <label for="message">How can we help you?</label>
                   </div>
                 </div>
                 <div class="row right-align">

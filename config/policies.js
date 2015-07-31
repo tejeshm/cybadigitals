@@ -53,5 +53,8 @@ module.exports.policies = {
 
   'auth': {
     '*': ['passport']
+  },
+  'site': {
+    '*': true
   }
 };

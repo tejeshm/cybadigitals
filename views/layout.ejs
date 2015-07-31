@@ -28,7 +28,8 @@
   <ul style="left: 0px;" id="nav-mobile" class="side-nav fixed">
     <li class="logo"><h4>Menu</h4></li>
     <li class="bold"><a href="/gallery" class="waves-effect waves-teal">Gallery</a></li>
-    <li class="bold"><a href="#!" onclick="Materialize.toast('It is coming really soon.', 4000)" class="waves-effect waves-teal">Store<span class="badge">coming soon</span></a>
+    <li class="bold"><a href="#!" onclick="Materialize.toast('It is coming really soon.', 4000)"
+                        class="waves-effect waves-teal">Store<span class="badge">coming soon</span></a>
     </li>
     <li class="bold"><a href="/about-3d-printing" class="waves-effect waves-teal">About 3D Printing</a></li>
     <li class="bold"><a href="/contact-us" class="waves-effect waves-teal">Contact Us</a>
@@ -49,12 +50,12 @@
         <div>
           <div class="input-field col s6 white-text">
             <i class="material-icons prefix">phone</i>
-            <input disabled id="phone" type="tel" value="9000259316 9640919291" class="validate">
+            <input disabled id="phone_read" type="tel" value="9000259316 9640919291" class="validate">
             <label for="phone">Telephone</label>
           </div>
           <div class="input-field col s6 white-text">
             <i class="material-icons prefix">email</i>
-            <input disabled id="email" type="tel" value="cybadigital.com" class="validate">
+            <input disabled id="email_read" type="tel" value="cybadigital.com" class="validate">
             <label for="email">Email</label>
           </div>
         </div>
@@ -67,39 +68,40 @@
       </div>
     </div>
     <!-- Modal Structure -->
-    <div id="contact-us-modal" class="modal modal-fixed-footer">
+    <div id="contact-us-modal" class="modal">
       <div class="modal-content">
         <h4>Contact us</h4>
 
         <div class="row">
-          <form class="col s12" id="contact-us-form">
+          <form class="col s12" id="contact-us-form" onsubmit="submitContactUs(event)">
             <div class="row">
               <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
+                <input name="first_name" id="first_name" type="text" required="required" class="validate">
                 <label for="first_name">First Name</label>
               </div>
               <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
+                <input name="last_name" id="last_name" type="text" required="required" class="validate">
                 <label for="last_name">Last Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
+                <input name="email" id="email" type="email" required="required" class="validate">
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">How can we help you?</label>
+                <textarea name="contact_message" id="contact_message" required="required"
+                          class="materialize-textarea"></textarea>
+                <label for="contact_message">How can we help you?</label>
               </div>
             </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons">send</i>
+            </button>
           </form>
         </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" onclick="submitContachUs()" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
       </div>
     </div>
   </div>

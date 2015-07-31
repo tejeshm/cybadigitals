@@ -317,3 +317,7 @@ footer .footer-details label {
   color: black !important;
 }
 
+#contact-us-modal.modal.modal-fixed-footer {
+  height: 80%;
+}
+

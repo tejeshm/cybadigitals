@@ -36,7 +36,7 @@ module.exports.routes = {
   '/gallery'          : {view: 'gallery'},
   '/store'            : {view: 'store'},
   '/about-3d-printing': {view: 'about-3d-printing'},
-  '/contact-us'       : {view: 'contact-us'},
+  '/contact-us'       : 'SiteController.contactUs',
   'get /login'        : 'AuthController.login',
   'get /logout'       : 'AuthController.logout',
   'get /register'     : 'AuthController.register',

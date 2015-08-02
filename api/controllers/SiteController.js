@@ -14,7 +14,6 @@ module.exports = {
    */
   contactUs: function (req, res) {
     if (req.method == 'POST') {
-      console.log(req.body);
       ContactUs.create(req.body, function (err, record) {
         if (!err) {
           ContactUs.findOne(record, function (err, model) {

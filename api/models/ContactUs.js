@@ -20,7 +20,7 @@ module.exports = {
           email  : this.email,
           message: this.message
         }, {
-          to     : 'tejesh.m@superprofs.com',
+          to     : 'cybadigitals@gmail.com',
           subject: this.firstName + " tried to contact you."
         },
         function (err, info) {

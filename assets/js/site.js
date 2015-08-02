@@ -146,7 +146,8 @@ function submitContactUs(event) {
   //Materialize.toast('Thank you, we will get back to you soon!', 4000);
   event.preventDefault();
   var formData = $("#contact-us-form").serialize();
-  $.post( "/contact-us", formData).done(function(data) {
-
+  $.post("/contact-us", formData).done(function (data) {
+    $('#contact-us-modal').closeModal();
+    Materialize.toast('Thank you, we will get back to you soon!', 4000);
   });
 }

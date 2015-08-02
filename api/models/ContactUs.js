@@ -11,13 +11,27 @@ module.exports = {
     firstName: {type: 'string', required: true},
     lastName : {type: 'string', required: true},
     email    : {type: 'email', required: true},
-    message  : {type: 'text', required: true}
-  },
+    message  : {type: 'text', required: true},
 
-  load: function (params) {
-    params.forEach(function (element, index) {
-      index in this.attributes ? this.firstName = element : this.firstName = null;
-    })
+    sendEmail: function () {
+      sails.hooks.email.send(
+        "contactUsEmail", {
+          name   : this.firstName + ' ' + this.lastName,
+          email  : this.email,
+          message: this.message
+        }, {
+          to     : 'tejesh.m@superprofs.com',
+          subject: this.firstName + " tried to contact you."
+        },
+        function (err, info) {
+          if (!err) {
+            console.log('Info' + info);
+          } else {
+            console.log(err)
+          }
+        }
+      );
+    }
   }
 
 };
